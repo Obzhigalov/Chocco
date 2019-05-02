@@ -486,6 +486,7 @@ body {
   display: flex; }
 
 .about-us-pros__item {
+  width: 33.3%;
   position: relative;
   margin-left: 5rem;
   display: -webkit-box;
@@ -637,6 +638,7 @@ body {
   text-decoration: none; }
 
 .create-order {
+  cursor: pointer;
   margin-top: 1.875rem;
   -webkit-box-shadow: 0 0 10px rgba(63, 63, 63, 0.25);
   box-shadow: 0 0 10px rgba(63, 63, 63, 0.25);
