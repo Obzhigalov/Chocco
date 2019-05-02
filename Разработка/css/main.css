@@ -518,7 +518,7 @@ body {
     display: none; }
 
 .about-us-pros__img-wrap {
-  height: 50%; }
+  height: 47%; }
 
 .about-us-pros__img {
   width: 7.8125rem;
@@ -551,23 +551,8 @@ body {
   background-repeat: no-repeat;
   background-position: center; }
 
-.about-us-pros__content {
-  height: 50%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center; }
-
 .about-us-pros__title {
+  height: 30%;
   margin-top: 2.1875rem;
   font-family: "Alegreya Sans", sans-serif;
   font-size: 27px;
