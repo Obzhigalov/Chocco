@@ -1,0 +1,23 @@
+
+.pros {
+	margin-top: rem(70px);
+	display: flex;
+	font-size: rem(16px);
+	font-weight: 400;
+}
+.pros__item {
+	padding-left: rem(60px);
+	margin-left: rem(45px);
+	&:first-child {
+		margin-left: 0;
+	}
+}
+
+@each $pros in (-1, -2, -3) {
+	.pros__item-#{$pros} {
+		background-image: url(../img/welcome/pros#{$pros}.png);
+		background-repeat: no-repeat;
+		background-position: top left;
+	}
+}
+
