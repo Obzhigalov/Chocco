@@ -39,6 +39,7 @@
     margin-top: rem(55px);
     display: flex;
 }
+
 .about-us-pros__item {
     width: 33.3%;
     position: relative;
@@ -65,6 +66,9 @@
         display: none;
     }
 }
+.about-us-pros__img-wrap {
+    height: 50%;
+}
 .about-us-pros__img {
     width: rem(125px);
     height: rem(125px);
@@ -87,6 +91,13 @@
         background-repeat: no-repeat;
         background-position: center;
     }
+}
+.about-us-pros__content {
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 .about-us-pros__title {
     margin-top: rem(35px);
