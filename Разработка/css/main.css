@@ -501,7 +501,7 @@ body {
   display: flex; }
 
 .about-us-pros__item {
-  width: 33.3%;
+  width: 32%;
   position: relative;
   margin-left: 5rem;
   display: -webkit-box;
@@ -511,9 +511,6 @@ body {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center; }
@@ -531,9 +528,6 @@ body {
   .about-us-pros__item:last-child::before {
     content: "";
     display: none; }
-
-.about-us-pros__img-wrap {
-  height: 47%; }
 
 .about-us-pros__img {
   width: 7.8125rem;
@@ -567,7 +561,6 @@ body {
   background-position: center; }
 
 .about-us-pros__title {
-  height: 30%;
   margin-top: 2.1875rem;
   font-family: "Alegreya Sans", sans-serif;
   font-size: 27px;

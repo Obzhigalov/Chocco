@@ -41,12 +41,11 @@
 }
 
 .about-us-pros__item {
-    width: 33.3%;
+    width: 32%;
     position: relative;
     margin-left: rem(80px);
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     &:first-child {
         margin-left: 0;
@@ -65,9 +64,6 @@
         content: "";
         display: none;
     }
-}
-.about-us-pros__img-wrap {
-    height: 47%;
 }
 .about-us-pros__img {
     width: rem(125px);
@@ -93,7 +89,6 @@
     }
 }
 .about-us-pros__title {
-    height: 30%;
     margin-top: rem(35px);
     font-family: $Alegreya;
     font-size: 27px;
