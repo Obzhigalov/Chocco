@@ -7,6 +7,7 @@
 	font-weight: 400;
 }
 .pros__item {
+	max-width: rem(135px);
 	padding-left: rem(60px);
 	margin-left: rem(45px);
 	&:first-child {

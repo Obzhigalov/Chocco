@@ -2,6 +2,7 @@
     width: 100%;
 }
 .feedback-card {
+		overflow: hidden;
     margin-top: rem(50px);
     position: relative;
     padding: rem(45px);
@@ -12,11 +13,20 @@
     background-repeat: no-repeat;
     background-position: top center;*/
     background: 
-                url(../img/feedback/feedback-card-top.png) no-repeat top center,
                 url(../img/feedback/feedback-card-bg.png) no-repeat top right;
     background-color: #f8faf9;
 }
-.feedback-card__img-wrap {
+.feedback-card__upside {
+	position: absolute;
+	top: 0;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-color: #fff;
+	width: rem(123px);
+	height: rem(75px);
+	-webkit-clip-path: ellipse(35% 35% at 50% 50%);
+}
+	.feedback-card__img-wrap {
     width: 254px;
     height: 260px;
     overflow: hidden;
@@ -53,7 +63,7 @@
 		align-items: center;
 }
 .feedback-grid__switch {
-		box-sizing: content-box;
+        box-sizing: content-box;
 		margin-left: rem(40px);
 		overflow: hidden;
     width: rem(94px);
