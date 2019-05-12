@@ -690,26 +690,17 @@ body {
   font-weight: 400; }
 
 .pros__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   max-width: 8.4375rem;
-  padding-left: 3.75rem;
   margin-left: 2.8125rem; }
   .pros__item:first-child {
     margin-left: 0; }
 
-.pros__item--1 {
-  background-image: url(../img/welcome/pros-1.png);
-  background-repeat: no-repeat;
-  background-position: top left; }
-
-.pros__item--2 {
-  background-image: url(../img/welcome/pros-2.png);
-  background-repeat: no-repeat;
-  background-position: top left; }
-
-.pros__item--3 {
-  background-image: url(../img/welcome/pros-3.png);
-  background-repeat: no-repeat;
-  background-position: top left; }
+.pros_item-text {
+  width: 50%;
+  margin-left: 0.625rem; }
 
 .section-title {
   font-family: "Alegreya Sans", sans-serif;

@@ -7,19 +7,15 @@
 	font-weight: 400;
 }
 .pros__item {
+	display: flex;
 	max-width: rem(135px);
-	padding-left: rem(60px);
 	margin-left: rem(45px);
 	&:first-child {
 		margin-left: 0;
 	}
 }
-
-@each $pros in (-1, -2, -3) {
-	.pros__item-#{$pros} {
-		background-image: url(../img/welcome/pros#{$pros}.png);
-		background-repeat: no-repeat;
-		background-position: top left;
-	}
+.pros_item-text {
+	width: 50%;
+	margin-left: rem(10px);
 }
 
