@@ -350,7 +350,9 @@ body {
   width: 100%; }
 
 .section {
-  min-height: 650px; }
+  min-height: 650px;
+  height: 100%;
+  width: 100%; }
 
 /*variables */
 /*sections */
@@ -620,6 +622,43 @@ body {
   margin: 0 auto;
   max-width: 58.75rem; }
 
+.team {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  font-family: "Alegreya Sans", sans-serif; }
+  .team:before {
+    z-index: -10;
+    position: absolute;
+    top: -14.6875rem;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/team/team-bg-1.png);
+    background-repeat: no-repeat;
+    background-position: top right; }
+  .team::after {
+    z-index: -10;
+    position: absolute;
+    bottom: -3.4375rem;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/team/team-bg-2.png);
+    background-repeat: no-repeat;
+    background-position: bottom left; }
+
 /*blocks */
 .header {
   width: 100%;
@@ -717,15 +756,18 @@ body {
   position: relative;
   padding: 2.8125rem;
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: none;
   /*background-color: $grey;
     background-image: url(../img/feedback/feedback-card-top.png);
     background-repeat: no-repeat;
     background-position: top center;*/
   background: url(../img/feedback/feedback-card-bg.png) no-repeat top right;
   background-color: #f8faf9; }
+
+.feedback-card--active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
 
 .feedback-card__upside {
   position: absolute;
@@ -740,8 +782,8 @@ body {
   -webkit-clip-path: ellipse(35% 35% at 50% 50%); }
 
 .feedback-card__img-wrap {
-  width: 254px;
-  height: 260px;
+  width: 15.875rem;
+  height: 16.25rem;
   overflow: hidden; }
 
 .feedback-card__img {
@@ -767,6 +809,7 @@ body {
 
 .feedback-card__description {
   color: #666666;
+  max-width: 28.75rem;
   font-size: 18px;
   font-weight: 400; }
 
@@ -806,3 +849,93 @@ body {
 .feedback-grid-buttons__img {
   -o-object-fit: cover;
   object-fit: cover; }
+
+.team-grid {
+  margin-top: 4.375rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  min-height: 28.3125rem; }
+
+.team-grid__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-align: center;
+  margin-left: 0.9375rem;
+  max-width: 15.3125rem; }
+  .team-grid__item:first-child {
+    margin-left: 0; }
+  .team-grid__item:nth-child(2n) {
+    margin-top: 3.75rem; }
+
+.team-grid__img-wrap {
+  width: 13.9375rem;
+  height: 18.0625rem; }
+
+.team-grid__title {
+  position: relative;
+  margin-top: 1.5625rem;
+  font-size: 21px;
+  font-weight: 500;
+  color: #323232; }
+
+.team-grid__switch {
+  position: relative;
+  color: inherit;
+  text-decoration: inherit; }
+  .team-grid__switch::after {
+    position: absolute;
+    top: 55%;
+    right: -0.9375rem;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    content: "";
+    width: 0.5625rem;
+    height: 0.5625rem;
+    -webkit-clip-path: polygon(0 20%, 50% 100%, 100% 20%);
+    background-color: #0f5a47; }
+
+.team-grid__switch--active::after {
+  position: absolute;
+  top: 55%;
+  right: -0.9375rem;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  content: "";
+  width: 0.5625rem;
+  height: 0.5625rem;
+  -webkit-clip-path: polygon(0 80%, 50% 0, 100% 80%);
+  background-color: #0f5a47; }
+
+.team-grid__subtitle {
+  display: none;
+  font-size: 18px;
+  font-weight: 400;
+  color: #281e1e; }
+
+.team-grid__subtitle--active {
+  display: block; }
+
+.team-grid__descr {
+  display: none;
+  max-width: 15.3125rem;
+  font-size: 18px;
+  font-weight: 300;
+  color: #666666; }
+
+.team-grid__descr--active {
+  display: block; }

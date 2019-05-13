@@ -1,0 +1,30 @@
+.team {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: $Alegreya;
+    &:before {
+        z-index: -10;
+        position: absolute;
+        top: rem(-235px);
+        content: "";
+        width: 100%;
+        height: 100%;
+        background-image: url(../img/team/team-bg-1.png);
+        background-repeat: no-repeat;
+        background-position: top right;
+    }
+    &::after {
+        z-index: -10;
+        position: absolute;
+        bottom: rem(-55px);
+        content: "";
+        width: 100%;
+        height: 100%;
+        background-image: url(../img/team/team-bg-2.png);
+        background-repeat: no-repeat;
+        background-position: bottom left;
+    }
+}
