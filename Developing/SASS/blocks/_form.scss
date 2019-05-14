@@ -1,0 +1,181 @@
+.form {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.form__personal {
+    padding-right: rem(10px);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 50%;
+}
+.input-wrap {
+    margin-top: rem(20px);
+    margin-left: rem(20px);
+    display: flex;
+    flex-direction: column;
+    &:first-child {
+        margin-left: 0;
+    }
+}
+.input-wrap--half {
+    width: 47.7%;
+}
+.input-wrap--full {
+    width: 99.7%;
+    margin-left: 0;
+}
+.input-wrap--quad {
+    width: 21.7%;
+}
+.input-wrap--quad-first{
+    margin-left: 0;
+}
+input[type="text"] {
+    height: rem(59px);
+    border: 3px solid transparent;
+    border-radius: 1px;
+    padding: rem(10px);
+    outline: none;
+    &:focus {
+        border: 3px solid #dde3bd;
+    }
+}
+.form__general {
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    padding-left: rem(10px);
+}
+.textarea-wrap {
+    margin-top: rem(20px);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.comment {
+    width: 100%;
+    max-width: 100%;
+    max-height: rem(180px);
+    padding: rem(10px);
+    text-align: left;
+    border: 3px solid transparent;
+    &:focus {
+        border: 3px solid #dde3bd;
+        outline: none;
+    }
+}
+.radio-wrap {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.payment-type {
+    margin-left: rem(20px);
+    &:first-child {
+        margin-left: 0;
+    }
+}
+.payment-type {
+    display: none;
+}
+.payment-type[type="radio"]:checked + .payment-type-text:before,
+.payment-type[type="radio"]:not(:checked) + .payment-type-text:before {
+    content: "";
+    position: absolute;
+    left: rem(-31px);
+    top: 0;
+    width: rem(25px);
+    height: rem(25px);
+    border: 1px solid #ddd;
+    background-color: #fff;
+    border-radius: 50%;
+}
+.payment-type[type="radio"]:checked + .payment-type-text:after,
+.payment-type[type="radio"]:not(:checked) + .payment-type-text:after {
+   content: "";
+   position: absolute;
+   left: rem(-24px);
+   top: rem(6.65px);
+   width: rem(13px);
+   height: rem(13px);
+   border-radius: 100%;
+   background-color: $green;
+}
+.payment-type[type="radio"]:checked + .payment-type-text:after {
+    opacity: 1;
+}
+.payment-type[type="radio"]:not(:checked) + .payment-type-text:after {
+    opacity: 0;
+}
+.payment-type-text {
+    position: relative;
+    margin-left: rem(30px);
+}
+.payment-type-text--card {
+    margin-left: rem(50px);
+}
+.checkbox-wrap {
+    display: flex;
+    align-items: center;
+}
+.callback-text {
+    position: relative;
+    margin-left: rem(32px);
+    margin-top: 15px;
+}
+.callback:checked, .callback:not(:checked) {
+    display: none;
+}
+.callback:checked + .callback-text:before,
+.callback:not(:checked) + .callback-text:before {
+    content: "";
+    position: absolute;
+    left: rem(-33px);
+    top: rem(0px);
+    width: rem(25px);
+    height: rem(25px);
+    border: 1px solid #dddddd;
+    background-color: #ffffff;
+}
+.callback:checked + .callback-text:after,
+.callback:not(:checked) + .callback-text:after {
+    content: "";
+    position: absolute;
+    left: rem(-26px);
+    top: rem(7px);
+    width: rem(10px);
+    height: 5px;
+    border-radius: 1px;
+    border-left: 4px solid $green;
+    border-bottom: 4px solid $green;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+.callback:not(:checked) + .callback-text:after {
+    opacity: 0;
+}
+.callback:checked + .callback-text:after {
+    opacity: 1;
+}
+.submit {
+    width: 100%;
+    position: relative;
+}
+.submit__buttons-wrap {
+    position: absolute;
+    left: 50%;
+    padding-left: rem(10px);
+}
+.clear {
+    color: inherit;
+    
+    margin-left: rem(20px);
+    background-color: transparent;
+    border: none;
+}
