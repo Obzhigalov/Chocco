@@ -649,7 +649,7 @@ body {
     background-repeat: no-repeat;
     background-position: top right; }
   .team::after {
-    z-index: -10;
+    z-index: 10;
     position: absolute;
     bottom: -3.4375rem;
     content: "";
@@ -658,6 +658,35 @@ body {
     background-image: url(../img/team/team-bg-2.png);
     background-repeat: no-repeat;
     background-position: bottom left; }
+
+.menu {
+  position: relative;
+  font-family: "Alegreya Sans", sans-serif;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-image: url(../img/menu/menu-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover; }
+  .menu::after {
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: .2; }
+
+.menu__title {
+  z-index: 2;
+  width: 24.5%;
+  height: 100%;
+  padding: 4.6875rem;
+  font-size: 48px;
+  font-weight: 700;
+  text-transform: uppercase; }
 
 /*blocks */
 .header {
@@ -859,6 +888,8 @@ body {
   -webkit-box-direction: normal;
   -ms-flex-direction: row;
   flex-direction: row;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
   min-height: 28.3125rem; }
 
 .team-grid__item {
@@ -874,7 +905,7 @@ body {
   align-items: center;
   text-align: center;
   margin-left: 0.9375rem;
-  max-width: 15.3125rem; }
+  max-width: 13.9375rem; }
   .team-grid__item:first-child {
     margin-left: 0; }
   .team-grid__item:nth-child(2n) {
@@ -939,3 +970,85 @@ body {
 
 .team-grid__descr--active {
   display: block; }
+
+.menu-grid {
+  z-index: 2;
+  width: 75.5%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end; }
+
+.menu-grid__item {
+  max-width: 39.375rem;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.menu-grid__item-title {
+  color: inherit;
+  text-decoration: inherit;
+  position: relative;
+  width: 6.25rem;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end; }
+  .menu-grid__item-title::after {
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: .75; }
+
+.menu-grid__item-title--milk {
+  background-image: url(../img/menu/menu-milk.jpg);
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.menu-grid__item-title--fruit {
+  background-image: url(../img/menu/menu-fruit.jpg);
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.menu-grid__item-title--berries {
+  background-image: url(../img/menu/menu-berries.jpg);
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.menu-grid__title {
+  padding-left: 3.75rem;
+  text-align: left;
+  width: 100%;
+  z-index: 3;
+  -webkit-transform: rotate(270deg);
+  -ms-transform: rotate(270deg);
+  transform: rotate(270deg);
+  white-space: nowrap;
+  font-size: 48px;
+  font-weight: 500; }
+
+.menu-grid__item-content {
+  z-index: 5;
+  position: relative;
+  width: 0;
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.7); }
+
+.menu-grid__item-content--active {
+  padding: 3.125rem 1.5625rem;
+  color: #fff;
+  width: 40vw; }
