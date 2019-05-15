@@ -724,6 +724,12 @@ body {
 .section-title--order {
   color: #0f5a47; }
 
+.contacts {
+  position: relative;
+  font-family: "Alegreya Sans", sans-serif;
+  font-size: 21px;
+  font-weight: 400; }
+
 /*blocks */
 .header {
   width: 100%;
@@ -742,7 +748,7 @@ body {
   font-size: 1.0625rem;
   font-weight: 400; }
 
-.header-contact {
+.phone {
   margin-left: 2.8125rem;
   padding-left: 0.9375rem;
   font-size: 1.5rem;
@@ -933,7 +939,7 @@ body {
   flex-direction: row;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  min-height: 28.3125rem; }
+  min-height: 31.875rem; }
 
 .team-grid__item {
   display: -webkit-box;
@@ -1307,3 +1313,69 @@ input[type="text"] {
   margin-left: 1.25rem;
   background-color: transparent;
   border: none; }
+
+.map {
+  height: 100%;
+  width: 100%;
+  background-image: url(../img/contacts/contacts-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 5.8125rem;
+  background-color: #fff; }
+
+.container--footer {
+  padding: 1.125rem 0;
+  margin: auto;
+  max-width: 58.75rem;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.contacts-data {
+  width: 50%; }
+
+.phone--footer {
+  font-size: 1.3125rem;
+  margin-left: 0;
+  color: #0f5a47;
+  background-image: url(../img/footer/phone.png); }
+
+.socials {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end; }
+
+.socials__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.socials__img {
+  margin-left: 1.25rem;
+  fill: rgba(0, 0, 0, 0.3);
+  -webkit-transition: fill 0.2s;
+  -o-transition: fill 0.2s;
+  transition: fill 0.2s; }
+
+.socials__img:hover {
+  fill: #000;
+  -webkit-transition: fill 0.2s;
+  -o-transition: fill 0.2s;
+  transition: fill 0.2s; }
