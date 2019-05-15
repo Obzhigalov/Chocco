@@ -46,16 +46,18 @@
     background-size: cover;
 }
 .menu-grid__title {
-    padding-left: rem(60px);
-    text-align: left;
+    padding-top: rem(50px);
     width: 100%;
     z-index: 3;
-    transform: rotate(270deg);
-    white-space: nowrap;
+    transform: rotate(180deg);
+    writing-mode: tb-rl;
     font-size: 48px;
     font-weight: 500;
+    display: flex;
+    align-items: center;
 }
 .menu-grid__item-content {
+    max-width: rem(530px);
     z-index: 5;
     position: relative;
     width: 0;
