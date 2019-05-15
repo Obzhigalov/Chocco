@@ -17,7 +17,7 @@
         background-position: top right;
     }
     &::after {
-        z-index: -10;
+        z-index: 5;
         position: absolute;
         bottom: rem(-55px);
         content: "";
