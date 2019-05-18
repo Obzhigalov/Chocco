@@ -29,4 +29,14 @@
         background-repeat: no-repeat;
         background-position: bottom left;
     }
+    @include tablet {
+        &::before {
+            top: rem(-180px);
+            background-size: rem(150px);
+        }
+        &::after {
+            bottom: rem(-30px);
+            background-size: rem(75px);
+        }
+    }
 }

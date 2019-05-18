@@ -3,6 +3,12 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    @include tablet {
+        width: 70%;
+        margin: 0 auto;
+        flex-direction: column;
+        align-items: center;
+    }
 }
 .form__personal {
     padding-right: rem(10px);
@@ -10,6 +16,10 @@
     flex-direction: row;
     flex-wrap: wrap;
     width: 50%;
+    @include tablet {
+        width: 100%;
+        padding: 0;
+    }
 }
 .form__row {
     width: 100%;
@@ -48,6 +58,10 @@ input[type="text"] {
     flex-wrap: wrap;
     width: 50%;
     padding-left: rem(10px);
+    @include tablet {
+        padding: 0;
+        width: 100%;
+    }
 }
 .textarea-wrap {
     margin-top: rem(20px);
@@ -73,6 +87,10 @@ input[type="text"] {
     height: rem(25px);
     display: flex;
     align-items: center;
+    @include tablet {
+        margin-top: rem(50px);
+        justify-content: center;
+    }
 }
 .payment-type {
     margin-left: rem(20px);
@@ -87,24 +105,41 @@ input[type="text"] {
 .payment-type[type="radio"]:not(:checked) + .payment-type-label:before {
     content: "";
     position: absolute;
-    left: rem(0px);
-    top: rem(0px);
-    width: rem(25px);
-    height: rem(25px);
+    left: 0px;
+    top: 0px;
+    width: 25px;
+    height: 25px;
     border: 0px solid #ddd;
     background-color: #fff;
     border-radius: 50%;
+    @include tablet {
+        top: -5px;
+    }
+    @include phone {
+        top: -2px;
+        width: 20px;
+        height: 20px;
+    }
 }
 .payment-type[type="radio"]:checked + .payment-type-label:after,
 .payment-type[type="radio"]:not(:checked) + .payment-type-label:after {
    content: "";
    position: absolute;
-   left: rem(6px);
-   top: rem(6px);
-   width: rem(13px);
-   height: rem(13px);
+   left: 6px;
+   top: 6px;
+   width: 13px;
+   height: 13px;
    border-radius: 100%;
    background-color: $green;
+   @include tablet {
+        top: 1px;
+    @include phone {
+        top: 3px;
+        left: 5px;
+        width: 10px;
+        height: 10px;
+    }
+}
 }
 .payment-type[type="radio"]:checked + .payment-type-label:after {
     opacity: 1;
@@ -114,9 +149,15 @@ input[type="text"] {
 }
 .payment-type-label {
     position: relative;
+    @include tablet {
+        min-width: rem(110px);   
+    }
 }
 .payment-type-text {
-    margin-left: rem(30px);
+    margin-left: 30px;
+    @include phone {
+        margin-left: 25px;   
+    }
 }
 .payment-type-label--card {
     margin-left: 10px;
@@ -124,6 +165,11 @@ input[type="text"] {
 .checkbox-wrap {
     display: flex;
     align-items: center;
+    @include tablet {
+        margin-top: rem(20px);
+        width: 100%;
+        justify-content: center;   
+    }
 }
 .callback-label {
     position: relative;
@@ -136,24 +182,41 @@ input[type="text"] {
     content: "";
     position: absolute;
     left: 0;
-    top: rem(0px);
-    width: rem(25px);
-    height: rem(25px);
+    top: 0px;
+    width: 25px;
+    height: 25px;
     border: 1px solid #dddddd;
     background-color: #ffffff;
+    @include tablet {
+        top: -5px;
+    }
+    @include phone {
+        top: -2px;
+        width: 20px;
+        height: 20px;
+    }
 }
 .callback:checked + .callback-label:after,
 .callback:not(:checked) + .callback-label:after {
     content: "";
     position: absolute;
-    left: rem(7px);
-    top: rem(7.5px);
-    width: rem(10px);
+    left: 7px;
+    top: 7.5px;
+    width: 10px;
     height: 5px;
     border-radius: 1px;
     border-left: 4px solid $green;
     border-bottom: 4px solid $green;
     transform: rotate(-45deg);
+    @include tablet {
+        top: 2.5px;
+    }
+    @include phone {
+        top: 4px;
+        left: 5px;
+        width: 7px;
+        height: 4px;
+    }
 }
 .callback:not(:checked) + .callback-label:after {
     opacity: 0;
@@ -162,16 +225,23 @@ input[type="text"] {
     opacity: 1;
 }
 .callback-text {
-    margin-left: rem(30px);
+    margin-left: 30px;
 }
 .submit {
     width: 100%;
     position: relative;
 }
 .submit__buttons-wrap {
+    margin-top: rem(30px);
     position: absolute;
     left: 50%;
     padding-left: rem(10px);
+    @include tablet {
+        padding: 0;
+        transform: translateX(-50%);
+        display: flex;
+        align-items: center;
+    }
 }
 .clear {
     color: inherit;

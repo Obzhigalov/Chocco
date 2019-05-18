@@ -1,12 +1,13 @@
-/*basic */
-@import "basic/normalize.scss";
-@import "basic/basic.scss";
-
-
 /*variables */
 @import "variables/color.scss";
 @import "variables/mixin";
 @import "variables/font-stacks";
+@import "variables/breakpoints";
+
+/*basic */
+@import "basic/normalize.scss";
+@import "basic/basic.scss";
+
 
 
 /*sections */

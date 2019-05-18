@@ -7,9 +7,9 @@
     background-color: #fff;
 }
 .container--footer {
-    padding: rem(18px) 0;
+    padding: rem(18px) 3%;
     margin: auto;
-    max-width: rem(940px);
+    max-width: rem(1000px);
     height: 100%;
     display: flex;
 }
@@ -24,6 +24,10 @@
     margin-left: 0;
     color: $green;
     background-image: url(../img/footer/phone.png);
+    @include tablet {
+        padding-left: rem(20px);
+        background-size: rem(12px);
+    }
 }
 .socials {
     width: 50%;

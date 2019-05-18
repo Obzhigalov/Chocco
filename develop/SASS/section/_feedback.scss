@@ -4,7 +4,9 @@
     height: 100%;
     min-height: 40.625rem;
     font-family: $Alegreya;
-    background: url(../img/feedback/feedback-bg-1.png) no-repeat 100% 2.5%;
+    background-image: url(../img/feedback/feedback-bg-1.png);
+    background-repeat: no-repeat;
+    background-position: 100% 2.5%;
         &::after {
             content: '';
             z-index: 0;
@@ -17,6 +19,13 @@
             background-repeat: no-repeat;
             background-position: bottom left;
         }
+    @include tablet {
+        background-size: rem(140px);
+        &::after {
+            bottom: rem(-90px);
+            background-size: rem(110px);
+        }
+    }
 }
 .container--feedback {
     height: 100%;

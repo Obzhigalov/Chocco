@@ -3,22 +3,31 @@
     width: 100%;
 }
 .feedback-card {
-		overflow: hidden;
+	overflow: hidden;
     margin-top: rem(50px);
     position: relative;
     padding: rem(45px);
     width: 100%;
     display: none;
-    /*background-color: $grey;
-    background-image: url(../img/feedback/feedback-card-top.png);
+    background-image: url(../img/feedback/feedback-card-bg.png);
     background-repeat: no-repeat;
-    background-position: top center;*/
-    background: 
-                url(../img/feedback/feedback-card-bg.png) no-repeat top right;
+    background-position: top right;
     background-color: #f8faf9;
+    @include tablet {
+        margin-top: rem(30px);
+        margin-right: auto;
+        margin-left: auto;
+        width: 60%;
+        background-size: rem(68px);
+    }
 }
 .feedback-card--active {
     display: flex;
+    @include tablet {
+        text-align: center;
+        flex-direction: column;
+        align-items: center;
+    }
 }
 .feedback-card__upside {
 	position: absolute;
@@ -46,19 +55,29 @@
 }
 .feedback-card__title {
     color: #323232;
-    font-size: 30px;
+    font-size: rem(30px);
     font-weight: 500;
+    @include tablet {
+        margin-top: rem(15px);
+    }
 }
 .feedback-card__description {
     color: $dark-grey;
     max-width: rem(460px);
-    font-size: 18px;
+    font-size: rem(18px);
     font-weight: 400;
+    @include tablet {
+        max-width: rem(383px);
+        margin-top: rem(15px);
+    }
 }
 .feedback-card__subtitle {
     color: $dark-grey;
-    font-size: 18px;
+    font-size: rem(18px);
     font-weight: 500;
+    @include tablet {
+        margin-top: rem(15px);
+    }
 }
 .feedback-grid-buttons {
 		width: 100%;

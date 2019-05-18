@@ -2,7 +2,7 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=1100, scale=1.0">
+    <meta name="viewport" content="width=device-width, scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/main.css">
     <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans:100,100i,300,300i,400,400i,500,500i,700,700i,800,800i,900,900i" rel="stylesheet">
@@ -55,19 +55,20 @@
 												</li>
 											</ul>
 										</nav>
-										<a href="" class="phone">
+										<a href="" class="phone phone--welcome">
 											8 800 903 90 90
 										</a>
+										<a href="#" class="burger"></a>
                </header>
                <div class="welcome-content">
-								<div>
+								<div class="welcome-content__inner">
 									<h1 class="welcome-content__title">
-										натуральные<br>
-										шоколадные<br>
+										натуральные
+										шоколадные
 										батончики
 									</h1>
 									<p class="welcome-content__description">
-										Наши батончики идеально подходят для<br> 
+										Наши батончики идеально подходят для
 										тех, кто следит за своим здоровьем
 									</p>
 									<button class="create-order">
@@ -109,7 +110,9 @@
 											</div>
 									</li>
 								</ul>
-									<img src="img/welcome/welcome-candy-bar.png" alt="Candy bar" class="welcome-candy-bar">
+									<div class="candy-bar-wrap">
+										<img src="img/welcome/welcome-candy-bar.png" alt="Candy bar" class="welcome-candy-bar">
+									</div>
 							 </div>
 							</div>
 					 </section>
@@ -121,7 +124,7 @@
 	 											Почему chocco?
 	 									</h2>
 	 									<p class="about-us__description">
-	 											В нашем мире все происходит очень быстро, поэтому мы<br>
+	 											В нашем мире все происходит очень быстро, поэтому мы
 	 											делаем батончики, которые удобно взять с собой.
 	 									</p>
 	 							 </div>
@@ -134,8 +137,8 @@
 										 	 	Полезно
 										 	</h3>
 										 	<p class="about-us-pros__description">
-										 	 	Натуральность - ключевое качество<br>
-										 	 	нашей продукции. Мы используем<br>
+										 	 	Натуральность - ключевое качественного
+										 	 	нашей продукции. Мы используем
 										 	 	только природные ингредиенты.
 										 	</p>
 	 								 </li>
@@ -148,7 +151,7 @@
 												</h3>
 												<p class="about-us-pros__description">
 												 	Нежный, ненавязчивый, изысканный –
-												 	так клиенты описывают вкусовые<br>
+												 	так клиенты описывают вкусовые
 												 	качества наших батончиков.
 												</p>
 	 								 </li>
@@ -160,8 +163,8 @@
 													Питательно
 												</h3>
 												<p class="about-us-pros__description">
-												 	Высокое содержание качественного<br>
-												 	белка, а также всех необходимых<br>
+												 	Высокое содержание качественного
+												 	белка, а также всех необходимых
 												 	витаминов и минералов.
 												</p>
 	 								 </li>
@@ -212,12 +215,12 @@
 									</div>
 									<div class="team-grid__content">
 										<h3 class="team-grid__title">
-											<a href="#" class="team-grid__switch team-grid__switch--active">Кирилл Матросов</a>
+											<a href="#" class="team-grid__switch">Кирилл Матросов</a>
 										</h3>
-										<div class="team-grid__subtitle team-grid__subtitle--active">
+										<div class="team-grid__subtitle">
 											Оператор
 										</div>
-										<div class="team-grid__descr team-grid__descr--active">
+										<div class="team-grid__descr">
 											С радостью поможет подобрать батончики и оформить заказ. 
 										</div>
 									</div>	
@@ -228,12 +231,12 @@
 									</div>
 									<div class="team-grid__content">
 										<h3 class="team-grid__title">
-											<a href="#" class="team-grid__switch">Мила Рыжкова</a>
+											<a href="#" class="team-grid__switch  team-grid__switch--active">Мила Рыжкова</a>
 										</h3>
-										<div class="team-grid__subtitle">
+										<div class="team-grid__subtitle  team-grid__subtitle--active">
 											PR, маркетинг
 										</div>
-										<div class="team-grid__descr">
+										<div class="team-grid__descr team-grid__descr--active">
 											По всем вопросам сотрудничества и рекламы писать только Миле. 
 										</div>
 									</div>	
@@ -262,7 +265,7 @@
 										С мёдом и фруктами
 									</h3>
 								</a>
-								<div class="menu-grid__item-content menu-grid__item-content--active">
+								<div class="menu-grid__item-content">
 									Рекомендуем употреблять батончики вместе с кокосовым или миндальным молоком. Так и вкуснее, и полезнее. 
 									Ну чего ещё хотеть от жизни? Батончик – он твой лучший друг и радует всех вокруг. Как классно, что можно питаться полезно и вкусно, а не как попало. Бабуля, конечно, за такую еду не похвалит, но кто её будет спрашивать – никто. Надо бы, кстати, бабулю поздравить с днём Победы.
 								</div>
@@ -298,8 +301,8 @@
 												Лучший перекус
 										</h4>
 										<div class="feedback-card__description">
-												Я ем малыми порциями, но часто. Это повышает мою<br> продуктивность в разы. В течение дня сижу за компьютером<br>
-												и часто отходить в кафе или на кухню просто не могу себе<br> позволить. А батончик – он всегда под рукой. Это приятно<br>
+												Я ем малыми порциями, но часто. Это повышает мою продуктивность в разы. В течение дня сижу за компьютером
+												и часто отходить в кафе или на кухню просто не могу себе позволить. А батончик – он всегда под рукой. Это приятно
 												и удобно.												
 										</div>
 										<div class="feedback-card__subtitle">

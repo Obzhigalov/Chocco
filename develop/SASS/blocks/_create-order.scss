@@ -10,10 +10,11 @@
     border-radius: rem(35px);
     color: $green;
     font-size: rem(19px);
-    font-weight: 400;
+    font-weight: 800;
     text-transform: uppercase;
 }
 .create-order--green {
+    margin-top: 0;
     box-shadow: none;
     background-color: $green;
     color: #fff;

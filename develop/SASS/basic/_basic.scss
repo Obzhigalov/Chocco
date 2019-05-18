@@ -3,6 +3,16 @@
 }
 html {
 	height: 100%;
+	font-size: 16px;
+	@include laptop {
+		font-size: 13.5px;
+	}
+	@include tablet {
+		font-size: 12px;
+	}
+	@include phone {
+		font-size: 10px;
+	}
 }
 ul,
 li {
@@ -43,7 +53,6 @@ body {
 	height: 100%;
 }
 .container {
-	width: 100%;
 	height: 100%;
 }
 .section {
