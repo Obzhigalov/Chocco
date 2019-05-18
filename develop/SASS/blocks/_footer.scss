@@ -43,8 +43,14 @@
     margin-left: rem(20px);
     fill: rgba(0,0,0,0.3);
     transition: fill 0.2s;
+    @include phone {
+        width: 15px;
+        height: 15px;
+    }
 }
 .socials__img:hover {
     fill: #000;
     transition: fill 0.2s;
 }
+
+

@@ -15,6 +15,10 @@
 		background-position: right bottom;
 		@include tablet {
 			background-position: right top;
+			background-size: rem(600px);
+		}
+		@include phone {
+			background-size: rem(450px);
 		}
 }
 .container--welcome {
@@ -107,6 +111,10 @@
 			background-repeat: no-repeat;
 			background-size: rem(434px);
 		}
+	@include phone {
+		&::after {
+		}
+	}
 	}
 }
 .welcome-candy-bar {
@@ -115,5 +123,8 @@
 		position: relative;
 		order: -1;
 		max-width: rem(403px);
+	}
+	@include phone {
+
 	}
 }

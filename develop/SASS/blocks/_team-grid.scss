@@ -4,7 +4,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     min-height: rem(510px);
-    @include tablet {
+    @include laptop {
         min-height: rem(610px);
         justify-content: center;
         padding: 0 rem(10px);
@@ -23,10 +23,10 @@
     &:nth-child(2n) {
         margin-top: rem(60px);
     }
-    @include tablet {
+    @include laptop {
         padding-bottom: rem(10px);
-        width: 49%;
-        max-width: 49%;
+        width: 50%;
+        max-width: 50%;
         margin-left: 0;
         &:nth-child(2n) {
             margin-top: 0;
@@ -37,6 +37,7 @@
     width: rem(223px);
 }
 .team-grid__img {
+    object-fit: cover;
 }
 .team-grid__title {
     position: relative;

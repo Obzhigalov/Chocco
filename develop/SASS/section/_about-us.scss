@@ -52,7 +52,10 @@
     width: 75%;
     margin-top: rem(55px);
     display: flex;
-		justify-content: center;
+    justify-content: center;
+        @include laptop {
+        
+        }
 		@include tablet {
 			margin-top: 0;
 			flex-direction: column;
@@ -61,6 +64,7 @@
 }
 
 .about-us-pros__item {
+    margin-left: rem(30px);
     width: 31%;
     position: relative;
     display: flex;
@@ -73,7 +77,7 @@
         content: "";
         position: absolute;
         top: rem(55px);
-        right: rem(-36.5px);
+        right: rem(-50px);
         width: 67px;
         height: 21px;
         background-image: url(../img/about-us/about-us-dots.png);
@@ -82,36 +86,29 @@
     &:last-child::before {
         content: "";
         display: none;
+        }
+	@include tablet {
+		margin-top: rem(25px);
+		width: 60%;
+		&::before {
+			display: none;
 		}
-		@include tablet {
-			margin-top: rem(25px);
-			width: 60%;
-			&::before {
-				display: none;
-			}
-		}
+	}
 }
 .about-us-pros__img {
     width: rem(125px);
     height: rem(125px);
     background-color: $grey;
     border-radius: 50%;
-    /*&::before {
-        content: "";
-        position: absolute;
-        top: rem(55px);
-        right: rem(-75px);
-        width: 67px;
-        height: 21px;
-        background-image: url(../../img/about-us/about-us-dots.png);
-        background-repeat: no-repeat;
-    }*/
 }
 @each $about-pros in (-1, -2, -3) {
     .about-us-pros__img-#{$about-pros} {
         background-image: url(../img/about-us/about-us-pros#{$about-pros}.png);
         background-repeat: no-repeat;
         background-position: center;
+        @include phone {
+            background-size: rem(75px);
+        }
     }
 }
 .about-us-pros__title {

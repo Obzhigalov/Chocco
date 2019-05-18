@@ -9,6 +9,11 @@
     font-size: rem(17px);
     font-weight: 400;
 }
+.header-logo {
+    @include phone {
+        width: 40px;
+    }
+}
 .phone {
     margin-left: rem(45px);
     padding-left: rem(15px);
