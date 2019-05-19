@@ -88,6 +88,7 @@
         display: none;
         }
 	@include tablet {
+        margin-left: 0;
 		margin-top: rem(25px);
 		width: 60%;
 		&::before {
