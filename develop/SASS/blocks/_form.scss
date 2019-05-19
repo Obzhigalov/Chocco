@@ -29,19 +29,14 @@
     margin-top: rem(20px);
     margin-left: rem(20px);
     display: flex;
+    flex: 1;
     flex-direction: column;
     &:first-child {
         margin-left: 0;
     }
 }
-.input-wrap--half {
-    width: calc(100%/2 - 0.625rem);
-}
-.input-wrap--full {
+.input {
     width: 100%;
-}
-.input-wrap--quad {
-    width: calc(100%/4 - 0.9375rem);
 }
 input[type="text"] {
     height: rem(59px);

@@ -1377,6 +1377,9 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
@@ -1384,14 +1387,8 @@ body {
   .input-wrap:first-child {
     margin-left: 0; }
 
-.input-wrap--half {
-  width: calc(100%/2 - 0.625rem); }
-
-.input-wrap--full {
+.input {
   width: 100%; }
-
-.input-wrap--quad {
-  width: calc(100%/4 - 0.9375rem); }
 
 input[type="text"] {
   height: 3.6875rem;
