@@ -98,7 +98,7 @@
 		}
 }
 .feedback-grid__switch--active {
-	border: 8px solid $green;
+	border: rem(8px) solid $green;
 	background-color: $green;
 }
 .feedback-grid-buttons__img {

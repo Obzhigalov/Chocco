@@ -1117,7 +1117,7 @@ body {
     margin-left: 0; }
 
 .feedback-grid__switch--active {
-  border: 8px solid #0f5a47;
+  border: 0.5rem solid #0f5a47;
   background-color: #0f5a47; }
 
 .feedback-grid-buttons__img {
