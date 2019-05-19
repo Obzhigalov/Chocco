@@ -205,13 +205,15 @@ input[type="text"] {
     width: 10px;
     height: 5px;
     border-radius: 1px;
-    border-left: 2px solid $green;
-    border-bottom: 2px solid $green;
+    border-left: 4px solid $green;
+    border-bottom: 4px solid $green;
     transform: rotate(-45deg);
     @include tablet {
         top: 2.5px;
     }
     @include phone {
+        border-left: 2px solid $green;
+        border-bottom: 2px solid $green;
         top: 3px;
         left: 4px;
         width: 5px;
@@ -225,7 +227,10 @@ input[type="text"] {
     opacity: 1;
 }
 .callback-text {
-    margin-left: 19px;
+    margin-left: 32px;
+    @include phone {
+        margin-left: 19px;
+    }
 }
 .submit {
     width: 100%;

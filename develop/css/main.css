@@ -1577,8 +1577,8 @@ input[type="text"] {
   width: 10px;
   height: 5px;
   border-radius: 1px;
-  border-left: 2px solid #0f5a47;
-  border-bottom: 2px solid #0f5a47;
+  border-left: 4px solid #0f5a47;
+  border-bottom: 4px solid #0f5a47;
   -webkit-transform: rotate(-45deg);
   -ms-transform: rotate(-45deg);
   transform: rotate(-45deg); }
@@ -1589,6 +1589,8 @@ input[type="text"] {
   @media screen and (max-width: 480px) {
     .callback:checked + .callback-label:after,
     .callback:not(:checked) + .callback-label:after {
+      border-left: 2px solid #0f5a47;
+      border-bottom: 2px solid #0f5a47;
       top: 3px;
       left: 4px;
       width: 5px;
@@ -1601,7 +1603,10 @@ input[type="text"] {
   opacity: 1; }
 
 .callback-text {
-  margin-left: 19px; }
+  margin-left: 32px; }
+  @media screen and (max-width: 480px) {
+    .callback-text {
+      margin-left: 19px; } }
 
 .submit {
   width: 100%;
@@ -1689,6 +1694,8 @@ input[type="text"] {
   align-items: center; }
 
 .socials__img {
+  width: 20px;
+  height: 20px;
   margin-left: 1.25rem;
   fill: rgba(0, 0, 0, 0.3);
   -webkit-transition: fill 0.2s;
