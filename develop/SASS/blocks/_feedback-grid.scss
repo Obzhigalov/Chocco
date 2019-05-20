@@ -87,11 +87,12 @@
 		align-items: center;
 }
 .feedback-grid__switch {
+        cursor: pointer;
         box-sizing: content-box;
 		margin-left: rem(40px);
-		overflow: hidden;
-    width: rem(94px);
-    height: rem(94px);
+        overflow: hidden;
+        width: rem(94px);
+        height: rem(94px);
 		border-radius: 50%;
 		&:first-child {
 			margin-left: 0;
@@ -99,7 +100,7 @@
 }
 .feedback-grid__switch--active {
 	border: rem(8px) solid $green;
-	background-color: $green;
+    background-color: $green;
 }
 .feedback-grid-buttons__img {
 	object-fit: cover;

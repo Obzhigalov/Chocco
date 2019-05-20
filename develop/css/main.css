@@ -822,6 +822,9 @@ body {
   background-image: url(../img/order/order-bg.png);
   background-repeat: no-repeat;
   background-size: cover; }
+  @media screen and (max-width: 480px) {
+    .order {
+      min-height: 480px; } }
 
 .container--order {
   height: 100%;
@@ -1107,6 +1110,7 @@ body {
   align-items: center; }
 
 .feedback-grid__switch {
+  cursor: pointer;
   -webkit-box-sizing: content-box;
   box-sizing: content-box;
   margin-left: 2.5rem;
