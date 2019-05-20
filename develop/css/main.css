@@ -1139,6 +1139,7 @@ body {
   min-height: 31.875rem; }
   @media screen and (max-width: 992px) {
     .team-grid {
+      width: 70%;
       min-height: 38.125rem;
       -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -1166,16 +1167,20 @@ body {
   @media screen and (max-width: 992px) {
     .team-grid__item {
       padding-bottom: 0.625rem;
-      width: 50%;
-      max-width: 50%;
+      width: calc(100%/2 - 10px);
       margin-left: 0; }
       .team-grid__item:nth-child(2n) {
-        margin-top: 0; } }
+        margin-top: 0;
+        margin-left: 1.25rem; } }
 
 .team-grid__img-wrap {
   width: 13.9375rem; }
+  @media screen and (max-width: 992px) {
+    .team-grid__img-wrap {
+      width: 100%; } }
 
 .team-grid__img {
+  width: 100%;
   -o-object-fit: cover;
   object-fit: cover; }
 
@@ -1390,13 +1395,15 @@ body {
 .input {
   width: 100%; }
 
++
 input[type="text"] {
   height: 3.6875rem;
   border: 3px solid transparent;
   border-radius: 1px;
   padding: 0.625rem;
   outline: none; }
-  input[type="text"]:focus {
+  +
+input[type="text"]:focus {
     border: 3px solid #dde3bd; }
 
 .form__general {

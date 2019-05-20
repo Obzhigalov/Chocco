@@ -5,6 +5,7 @@
     flex-wrap: wrap;
     min-height: rem(510px);
     @include laptop {
+        width: 70%;
         min-height: rem(610px);
         justify-content: center;
         padding: 0 rem(10px);
@@ -25,18 +26,22 @@
     }
     @include laptop {
         padding-bottom: rem(10px);
-        width: 50%;
-        max-width: 50%;
+        width: calc(100%/2 - 10px);
         margin-left: 0;
         &:nth-child(2n) {
             margin-top: 0;
+            margin-left: rem(20px);
         }
     }
 }
 .team-grid__img-wrap {
     width: rem(223px);
+    @include laptop {
+        width: 100%;
+    }
 }
 .team-grid__img {
+    width: 100%;
     object-fit: cover;
 }
 .team-grid__title {
