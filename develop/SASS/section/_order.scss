@@ -6,9 +6,6 @@
     background-image: url(../img/order/order-bg.png);
     background-repeat: no-repeat;
     background-size: cover;
-    @include phone {
-        min-height: 480px;
-    }
 }
 .container--order {
     height: 100%;

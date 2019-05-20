@@ -370,6 +370,9 @@ body {
   min-height: 40.625rem;
   height: 100%;
   width: 100%; }
+  @media screen and (max-width: 480px) {
+    .section {
+      min-height: 480px; } }
 
 /*sections */
 .welcome {
@@ -822,9 +825,6 @@ body {
   background-image: url(../img/order/order-bg.png);
   background-repeat: no-repeat;
   background-size: cover; }
-  @media screen and (max-width: 480px) {
-    .order {
-      min-height: 480px; } }
 
 .container--order {
   height: 100%;

@@ -59,4 +59,7 @@ body {
 	min-height: rem(650px);
 	height: 100%;
 	width: 100%;
+	@include phone {
+        min-height: 480px;
+    }
 }
