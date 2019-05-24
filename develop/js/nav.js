@@ -30,5 +30,4 @@ let menu = function(elems) {
     link:'.nav-list__link'
 });
 
-
 menu.navexist();
