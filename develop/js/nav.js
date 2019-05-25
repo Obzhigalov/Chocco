@@ -4,18 +4,25 @@ let menu = function(elems) {
     let link = document.querySelector(elems.link);
     let navlist = document.querySelector(elems.navlist);
 
+
     let _togglenav = function() {
         burger.classList.toggle('burger--active');
         nav.classList.toggle('nav--active');
     };
 
+    let _removenav = function() {
+        burger.classList.remove('burger--active');
+        nav.classList.remove('nav--active');
+    };
+
     let menuevent = function() {
         burger.addEventListener('click', _togglenav);
+        count = 1;
         navlist.addEventListener('click', function(click){
             target = click.target;
 
             if (target.classList.contains('nav-list__link')) {
-                _togglenav();
+                _removenav();
             }
         })
     };
