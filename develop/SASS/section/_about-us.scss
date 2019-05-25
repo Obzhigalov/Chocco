@@ -6,7 +6,7 @@
     font-family: $Alegreya;
         &::after {
             content: '';
-            z-index: -1;
+            z-index: 5;
             position: absolute;
             left: 0;
             bottom: rem(-100px);
@@ -25,6 +25,8 @@
 .container--about-us {
     z-index: 1;
     height: 100%;
+    max-width: 940px;
+    margin: 0 auto;
 }
 .about-us__content {
     height: 100%;
@@ -49,7 +51,7 @@
     margin-block-end: 0;
 }
 .about-us-pros {
-    width: 75%;
+    width: 100%;
     margin-top: rem(55px);
     display: flex;
     justify-content: center;
