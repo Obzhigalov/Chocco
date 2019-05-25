@@ -121,6 +121,7 @@
 		}
 }	
 .slider-switch {
+	z-index: 30;
 	position: absolute;
 	width: rem(21px);
 	height: rem(21px);
@@ -136,7 +137,6 @@
 	 }
 }
 .slider-switch--left:hover {
-	outline: none;
 	transform:  rotate(45deg) translateY(-50%) scale(1.1);
 }
 .slider-switch--right:hover {

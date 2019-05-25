@@ -1949,6 +1949,7 @@ input[type="text"] {
       margin-top: 1.875rem; } }
 
 .slider-switch {
+  z-index: 30;
   position: absolute;
   width: 1.3125rem;
   height: 1.3125rem;
@@ -1964,7 +1965,6 @@ input[type="text"] {
       top: 38%; } }
 
 .slider-switch--left:hover {
-  outline: none;
   -webkit-transform: rotate(45deg) translateY(-50%) scale(1.1);
   -ms-transform: rotate(45deg) translateY(-50%) scale(1.1);
   transform: rotate(45deg) translateY(-50%) scale(1.1); }
