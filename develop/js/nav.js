@@ -1,23 +1,26 @@
 let menu = function(elems) {
+    let burgerwrap = document.querySelector(elems.burgerwrap);
     let burger = document.querySelector(elems.burger);
     let nav = document.querySelector(elems.nav);
-    let link = document.querySelector(elems.link);
     let navlist = document.querySelector(elems.navlist);
+    let body = document.querySelector(elems.body);
 
 
     let _togglenav = function() {
+        event.preventDefault();
         burger.classList.toggle('burger--active');
         nav.classList.toggle('nav--active');
+        body.classList.toggle('body--menu');
     };
 
     let _removenav = function() {
         burger.classList.remove('burger--active');
         nav.classList.remove('nav--active');
+        body.classList.remove('body--menu');
     };
 
     let menuevent = function() {
-        burger.addEventListener('click', _togglenav);
-        count = 1;
+        burgerwrap.addEventListener('click', _togglenav);
         navlist.addEventListener('click', function(click){
             target = click.target;
 
@@ -31,10 +34,11 @@ let menu = function(elems) {
         navexist: menuevent
     }
 }({
+    burgerwrap: '.burger-wrap',
     burger: '.burger',
     nav: '.nav',
     navlist: '.nav-list',
-    link:'.nav-list__link'
+    body: '.body'
 });
 
 menu.navexist();
