@@ -1,30 +1,26 @@
-let team = function(elems) {
-    let title = document.querySelector(elems.title);
-    let linkswitch = document.querySelector(elems.linkswitch);
-    let subtitle = document.querySelector(elems.subtitle);
-    let descr = document.querySelector(elems.descr);
+let team = function() {
+    let linkswitch = document.querySelectorAll('.team-grid__switch');
 
-    let toggleteam = function() {
-        
-        event.preventDefault();
-        linkswitch.classList.toggle('team-grid__switch--active');
-        subtitle.classList.toggle('team-grid__subtitle--active');
-        descr.classList.toggle('team-grid__descr--active');
-    };
+				linkswitch.forEach(function(itemname) {
 
-    let teamevent = function() {
-        console.log('lol');
-        linkswitch.addEventListener('click', toggleteam);
-    };
+					itemname.addEventListener('click', function(e) {
 
-    return {
-        teampopup: teamevent
-    }
-}({
-    title: '.team-grid__title',
-    linkswitch: '.team-grid__switch',
-    subtitle: '.team-grid__subtitle',
-    descr: '.team-grid__descr'
-});
+						e.preventDefault();
 
-team.teampopup();
+						let activeitem = document.querySelector('.team-grid__item--active');
+						
+						if(activeitem){
+							activeitem.classList.remove('.team-grid__item--active');
+						}
+
+						if(!activeitem || activeitem.querySelector('.team-grid__switch') != e.target){
+
+							let currentitem = e.target.closest('.team-grid__item');
+							currentitem.classlist.add('.team-grid__item--active');
+
+						}
+					})
+
+				})
+};
+team();

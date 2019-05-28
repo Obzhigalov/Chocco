@@ -67,7 +67,7 @@
         background-color: #0f5a47;
     }
 }
-.team-grid__switch--active {
+.team-grid__item--active .team-grid__switch {
     &::after {
         position: absolute;
         top: 55%;
@@ -86,7 +86,7 @@
     font-weight: 400;
     color: #281e1e;
 }
-.team-grid__subtitle--active {
+.team-grid__item--active .team-grid__subtitle {
     display: block;
 }
 .team-grid__descr {
@@ -96,6 +96,6 @@
     font-weight: 300;
     color: #666666;
 }
-.team-grid__descr--active {
+.team-grid__item--active .team-grid__descr {
     display: block;
 }
