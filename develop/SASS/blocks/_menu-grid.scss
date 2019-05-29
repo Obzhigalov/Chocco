@@ -4,11 +4,17 @@
     height: 100%;
     display: flex;
     justify-content: flex-end;
+    @include tablet {
+        width: 100%;
+    }
 }
 .menu-grid__item {
     max-width: rem(630px);
     height: 100%;
     display: flex;
+    @include tablet {
+        max-width: 100%;
+    }
 }
 .menu-grid__item-title {
     color: inherit;
@@ -64,8 +70,20 @@
     overflow: hidden;
     background-color: rgba(0,0,0,.7);
 }
-.menu-grid__item-content--active {
+.menu-grid__item--active {
+    @include tablet {
+        width: 100%;
+        max-width: 100%;
+    }
+}
+.menu-grid__item--active .menu-grid__item-content {
     padding: rem(50px) rem(25px);
     color: #fff;
     width: 40vw;
+    transition: width 0.3s;
+    @include tablet {
+        width: 100%;
+        max-width: 100%;
+        transition: width 0s;
+    }
 }

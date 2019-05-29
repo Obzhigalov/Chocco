@@ -822,6 +822,9 @@ body {
   font-size: 3rem;
   font-weight: 700;
   text-transform: uppercase; }
+  @media screen and (max-width: 768px) {
+    .menu__title {
+      position: absolute; } }
 
 .order {
   font-family: "Alegreya Sans", sans-serif;
@@ -1331,23 +1334,31 @@ body {
   background-color: #0f5a47; }
 
 .team-grid__subtitle {
-  display: none;
+  opacity: 0;
+  display: block;
   font-size: 1.125rem;
   font-weight: 400;
   color: #281e1e; }
 
 .team-grid__item--active .team-grid__subtitle {
-  display: block; }
+  -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  transition: all 0.4s;
+  opacity: 1; }
 
 .team-grid__descr {
-  display: none;
+  opacity: 0;
+  display: block;
   max-width: 15.3125rem;
   font-size: 1.125rem;
   font-weight: 300;
   color: #666666; }
 
 .team-grid__item--active .team-grid__descr {
-  display: block; }
+  -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  transition: all 0.4s;
+  opacity: 1; }
 
 .menu-grid {
   z-index: 2;
@@ -1359,6 +1370,9 @@ body {
   -webkit-box-pack: end;
   -ms-flex-pack: end;
   justify-content: flex-end; }
+  @media screen and (max-width: 768px) {
+    .menu-grid {
+      width: 100%; } }
 
 .menu-grid__item {
   max-width: 39.375rem;
@@ -1366,6 +1380,9 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
+  @media screen and (max-width: 768px) {
+    .menu-grid__item {
+      max-width: 100%; } }
 
 .menu-grid__item-title {
   color: inherit;
@@ -1434,10 +1451,25 @@ body {
   overflow: hidden;
   background-color: rgba(0, 0, 0, 0.7); }
 
-.menu-grid__item-content--active {
+@media screen and (max-width: 768px) {
+  .menu-grid__item--active {
+    width: 100%;
+    max-width: 100%; } }
+
+.menu-grid__item--active .menu-grid__item-content {
   padding: 3.125rem 1.5625rem;
   color: #fff;
-  width: 40vw; }
+  width: 40vw;
+  -webkit-transition: width 0.3s;
+  -o-transition: width 0.3s;
+  transition: width 0.3s; }
+  @media screen and (max-width: 768px) {
+    .menu-grid__item--active .menu-grid__item-content {
+      width: 100%;
+      max-width: 100%;
+      -webkit-transition: width 0s;
+      -o-transition: width 0s;
+      transition: width 0s; } }
 
 .form {
   width: 100%;

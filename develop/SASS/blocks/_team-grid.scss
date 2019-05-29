@@ -81,21 +81,25 @@
     }
 }
 .team-grid__subtitle {
-    display: none;
+    opacity: 0;
+    display: block;
     font-size: rem(18px);
     font-weight: 400;
     color: #281e1e;
 }
 .team-grid__item--active .team-grid__subtitle {
-    display: block;
+    transition: all 0.4s;
+    opacity: 1;
 }
 .team-grid__descr {
-    display: none;
+    opacity: 0;
+    display: block;
     max-width: rem(245px);
     font-size: rem(18px);
     font-weight: 300;
     color: #666666;
 }
 .team-grid__item--active .team-grid__descr {
-    display: block;
+    transition: all 0.4s;
+    opacity: 1;
 }
