@@ -1124,7 +1124,7 @@ body {
   background-color: #f8faf9; }
   @media screen and (max-width: 768px) {
     .feedback-card--1, .feedback-card--2, .feedback-card--3 {
-      min-height: 42.375rem;
+      min-height: 43.875rem;
       margin-top: 1.875rem;
       margin-right: auto;
       margin-left: auto;
