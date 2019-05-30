@@ -1111,7 +1111,7 @@ body {
   z-index: 10;
   width: 100%; }
 
-.feedback-card {
+.feedback-card--1, .feedback-card--2, .feedback-card--3 {
   overflow: hidden;
   margin-top: 3.125rem;
   position: relative;
@@ -1123,7 +1123,8 @@ body {
   background-position: top right;
   background-color: #f8faf9; }
   @media screen and (max-width: 768px) {
-    .feedback-card {
+    .feedback-card--1, .feedback-card--2, .feedback-card--3 {
+      min-height: 42.375rem;
       margin-top: 1.875rem;
       margin-right: auto;
       margin-left: auto;
@@ -1219,19 +1220,26 @@ body {
 
 .feedback-grid__switch {
   cursor: pointer;
+  border: 0.5rem solid transparent;
   -webkit-box-sizing: content-box;
   box-sizing: content-box;
   margin-left: 2.5rem;
   overflow: hidden;
   width: 5.875rem;
   height: 5.875rem;
-  border-radius: 50%; }
+  border-radius: 50%;
+  -webkit-transition: border 0.1s;
+  -o-transition: border 0.1s;
+  transition: border 0.1s; }
   .feedback-grid__switch:first-child {
     margin-left: 0; }
 
 .feedback-grid__switch--active {
   border: 0.5rem solid #0f5a47;
-  background-color: #0f5a47; }
+  background-color: #0f5a47;
+  -webkit-transition: border 0.3s;
+  -o-transition: border 0.3s;
+  transition: border 0.3s; }
 
 .feedback-grid-buttons__img {
   -o-object-fit: cover;
