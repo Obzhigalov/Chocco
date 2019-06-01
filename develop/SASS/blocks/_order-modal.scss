@@ -1,0 +1,53 @@
+.order-modal-wrap--active {
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);;
+}
+
+.order-modal {
+    display: none;
+}
+.order-modal-wrap--active .order-modal {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: rem(300px);
+    height: rem(200px);
+    background-color: #fff;
+    border-radius: 20px;
+    display: flex;
+    color: $green;
+}
+.order-modal__content {
+    padding: 5%;
+    width: 80%;
+    height: 100%;
+}
+.order-modal__close-wrap {
+    position: relative;
+    flex-shrink: 0;
+    width: 20%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+.order-modal-wrap--active  .cross {
+    margin-top: 15px;
+    margin-right: 15px;
+    background-color: $green;
+    width: 20px;
+    height: 4px;
+    border-radius: 2px;
+    transform: rotate(45deg);
+    &::after {
+        content: '';
+        position: absolute;
+        background-color: $green;
+        width: 20px;
+        height: 4px;
+        border-radius: 2px;
+        transform: rotate(-90deg);
+    }
+}

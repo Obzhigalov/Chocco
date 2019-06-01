@@ -42,9 +42,6 @@ let feedback = function() {
 							slide3.classList.add('feedback-card--active');
 							return;
 						}
-
-
-
         });
     });
 };

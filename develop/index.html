@@ -73,7 +73,7 @@
 										Наши батончики идеально подходят для
 										тех, кто следит за своим здоровьем
 									</p>
-									<button class="create-order">
+									<button href="#" class="create-order">
 										заказать
 									</button>
 								</div>
@@ -455,62 +455,82 @@
 						 </div>
 					 </section>
 					 <section class="section order">
+						 <div class="order-modal-wrap">
+							 <div class="order-modal">
+	 							 <div class="order-modal__content">
+	 
+	 							 </div>
+	 							 <div class="order-modal__close-wrap">
+	 								<a class="cross">
+	 
+	 								</a>
+	 							 </div>
+	 						 </div>
+						 </div>
 						<div class="container container--order">
 							<h2 class="section-title section-title--order">
 								закажите доставку
 							</h2>
-							<form action="#" class="form">
+							<form name="inform" class="form" id="form">
 								<div class="form__personal">
 									<div class="form__row">
 										<label class="input-wrap">
 												Имя
-											<input type="text" class="input name">
+											<input type="text" class="input name" name="name" required>
+											<div class="error"></div>
 										</label>
 										<label class="input-wrap">
 													Телефон
-											<input type="text" class="input name">
+											<input type="tel" pattern="[0-9]{5,10}" class="input name" name="phone" required>
+											<div class="error"></div>
 										</label>
 									</div>
 									<div class="form__row">
 										<label class="input-wrap">
 													Улица
-											<input type="text" class="input street">
+											<input type="text" class="input street" name="street" required>
+											<div class="error"></div>
 										</label>
 									</div>
 									<div class="form__row">
 										<label class="input-wrap">
 													Дом
-											<input type="text" class="input address">
+											<input type="number" class="input address" name="building" required>
+											<div class="error"></div>
 										</label>
 										<label class="input-wrap">
 													Корпус
-												<input type="text" class="input address">
+												<input type="text" class="input address" name="body">
+												<div class="error"></div>
 										</label>
 										<label class="input-wrap">
 													Квартира
-												<input type="text" class="input address">
+												<input type="text" class="input address" name="apt" required>
+												<div class="error"></div>
 										</label>
 										<label class="input-wrap">
 													Этаж
-												<input type="text" class="input address">
+												<input type="number" class="input address" name="floor" required>
+												<div class="error"></div>
 										</label>	
 									</div>
 								</div>
 								<div class="form__general">
 									<label class="textarea-wrap">
 											Комментарий
-										<textarea name="comment" id="" cols="30" rows="10" class="comment">
+										<textarea name="comment" id="" cols="30" rows="10" class="comment" required>
 	
 										</textarea>
+										<div class="error"></div>
 									</label>
 									<div class="radio-wrap">
-										<input name="payment-type" type="radio" id="payment-cash" class="payment-type">
+										<input name="paymentType" type="radio" name="cash" id="payment-cash" class="payment-type">
 										<label for="payment-cash" class="payment-type-label">
 											<span class="payment-type-text">
 												Потребуется сдача
 											</span>
 										</label>
-										<input name="payment-type" checked type="radio" id="payment-card" class="payment-type">
+										<input name="paymentType" checked type="radio" name="card" id="payment-card" class="payment-type">
 										<label for="payment-card" class="payment-type-label payment-type-label--card">
 											<span class="payment-type-text">
 												Оплата по карте
@@ -518,7 +538,7 @@
 										</label>
 										</div>
 									<div class="checkbox-wrap">
-										<input checked type="checkbox" class="callback" id="callback">
+										<input checked type="checkbox" name="callback" class="callback" id="callback">
 										<label for="callback" class="callback-label">
 												<span class="callback-text">
 													Не перезванивать
@@ -528,10 +548,10 @@
 								</div>
 								<div class="submit">
 									<div class="submit__buttons-wrap">
-										<button class="create-order create-order--green">
+										<button type="submit" id="sendform" class="create-order create-order--green">
 											Заказать
 										</button>
-										<button class="clear">
+										<button type="button" class="clear">
 											Очистить
 										</button>
 									</div>
@@ -595,6 +615,8 @@
 					 <script src="js/menu.js">
 					 </script>
 					 <script src="js/feedback.js">
+					 </script>
+					 <script src="js/form.js">
 					 </script>
 </body>
 </body>
