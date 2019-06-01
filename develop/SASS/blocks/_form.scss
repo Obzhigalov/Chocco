@@ -39,7 +39,7 @@
     width: 100%;
 }
 .input:invalid {
-    border: 2px dashed $green;
+    border: 2px solid $green;
 }
 input[type="text"], input[type="tel"], input[type="number"] {
     height: rem(59px);
