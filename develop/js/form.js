@@ -13,7 +13,10 @@ sendbutton.addEventListener('click', e => {
 
     if (validateForm(myForm)) {
 
-        let data = new FormData(document.forms.inform);
+        let data = new FormData();
+            data.append("name", myForm.name.value);
+            data.append("phone", myForm.phone.value);
+            data.append("comment", myForm.comment.value);
             data.append("to", "my@gmail.com");
         // {
         //     name: myForm.elements.name.value,
