@@ -1271,26 +1271,11 @@ body {
 .feedback-grid-buttons__img {
   -o-object-fit: cover;
   object-fit: cover;
-  -webkit-filter: blur(1px);
-  filter: blur(1px);
   -webkit-transition: -webkit-filter 0.15s;
   transition: -webkit-filter 0.15s;
   -o-transition: filter 0.15s;
   transition: filter 0.15s;
   transition: filter 0.15s, -webkit-filter 0.15s; }
-
-.feedback-grid-buttons__img:hover {
-  -webkit-filter: blur(0px);
-  filter: blur(0px);
-  -webkit-transition: -webkit-filter 0.15s;
-  transition: -webkit-filter 0.15s;
-  -o-transition: filter 0.15s;
-  transition: filter 0.15s;
-  transition: filter 0.15s, -webkit-filter 0.15s; }
-
-.feedback-grid__switch--active .feedback-grid-buttons__img {
-  -webkit-filter: blur(0px);
-  filter: blur(0px); }
 
 .team-grid {
   margin-top: 4.375rem;
