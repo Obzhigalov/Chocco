@@ -107,5 +107,14 @@
     transition: border 0.3s;
 }
 .feedback-grid-buttons__img {
-	object-fit: cover;
+    object-fit: cover;
+    filter: blur(1px);
+    transition: filter 0.15s;
+}
+.feedback-grid-buttons__img:hover {
+    filter: blur(0px);
+    transition: filter 0.15s;
+}
+.feedback-grid__switch--active .feedback-grid-buttons__img {
+    filter: blur(0px);
 }

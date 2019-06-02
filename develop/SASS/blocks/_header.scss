@@ -32,6 +32,9 @@
         display: none;
     }
 }
+.phone--welcome:hover {
+    opacity: 0.8;
+}
 .nav--active {
     @include tablet {
 				z-index: 20;
@@ -76,6 +79,9 @@
 .nav-list__link {
     color: inherit;
     text-decoration: none;
+}
+.nav-list__link:hover {
+    opacity: 0.85;
 }
 .burger-wrap {
     width: 24px;

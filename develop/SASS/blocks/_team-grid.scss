@@ -67,6 +67,9 @@
         background-color: #0f5a47;
     }
 }
+.team-grid__switch:hover {
+    color: $green;
+}
 .team-grid__item--active .team-grid__switch {
     &::after {
         position: absolute;

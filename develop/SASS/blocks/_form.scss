@@ -255,6 +255,9 @@ input[type="text"], input[type="tel"], input[type="number"] {
     background-color: transparent;
     border: none;
 }
+.clear:hover {
+    opacity: 0.85;
+}
 .formerror {
     margin-top: rem(100px);
     position: absolute;
