@@ -2160,6 +2160,7 @@ input[type="text"], input[type="tel"], input[type="number"] {
   background-color: rgba(0, 0, 0, 0.9); }
 
 .order-modal {
+  font-style: "Alegreya Sans", sans-serif;
   display: none;
   padding: 2%; }
   @media screen and (max-width: 768px) {
