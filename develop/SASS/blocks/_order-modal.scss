@@ -7,7 +7,6 @@
 }
 
 .order-modal {
-    font-style: $Alegreya;
     display: none;
     padding: 2%;
     @include tablet {
@@ -28,6 +27,7 @@
     color: $green;
 }
 .order-modal__content {
+    font-family: $Alegreya;
     width: 80%;
     height: 100%;
 }
