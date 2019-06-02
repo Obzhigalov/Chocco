@@ -22,7 +22,7 @@ sendbutton.addEventListener('click', e => {
 
         formerror.textContent = '';
 
-        let data = new FormData();
+        let data = new FormData(myForm);
             data.append("name", myForm.name.value);
             data.append("phone", myForm.phone.value);
             data.append("comment", myForm.comment.value);
