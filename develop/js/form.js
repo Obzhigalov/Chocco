@@ -7,11 +7,20 @@ let cross = document.querySelector('.cross');
 let input = document.querySelectorAll('.input');
 let textarea = document.querySelector('.comment');
 let clear = document.querySelector('.clear');
+let formerror = document.querySelector('.formerror')
+let clearform = () => {
+    input.forEach(function(elem) {
+        elem.value = '';
+    });
+    textarea.value = '';
+}
 
 sendbutton.addEventListener('click', e => {
     e.preventDefault();
 
     if (validateForm(myForm)) {
+
+        formerror.textContent = '';
 
         let data = new FormData();
             data.append("name", myForm.name.value);
@@ -43,10 +52,7 @@ sendbutton.addEventListener('click', e => {
             modalContent.textContent = xhr.response.message;
 
             if (xhr.response.status == 1) {
-                input.forEach(function(elem) {
-                    elem.value = '';
-                });
-                textarea.value = '';
+                clearform();
             }
             
         });
@@ -82,11 +88,13 @@ function validateForm(form) {
         valid = false;
     }
 
+
     return valid;
 }
 
 function validateInput(input) {
     // input.nextElementSibling.textContent = input.validationMessage;
+    formerror.textContent = 'Пожалуйста, корректно заполните все выделенные поля.'
 
     return input.checkValidity();
 }
@@ -96,9 +104,5 @@ cross.addEventListener('click', () => {
     body.classList.remove('body--menu');
 })
 
-clear.addEventListener('click', () => {
-    input.forEach(function(elem) {
-        elem.value = '';
-    });
-    textarea.value = '';
-})
+clear.addEventListener('click', clearform)
+

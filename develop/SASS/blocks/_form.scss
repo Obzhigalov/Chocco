@@ -41,6 +41,9 @@
 .input:invalid {
     border: 2px solid $green;
 }
+.comment:invalid {
+    border: 2px solid $green;
+}
 input[type="text"], input[type="tel"], input[type="number"] {
     height: rem(59px);
     border: 3px solid transparent;
@@ -251,4 +254,12 @@ input[type="text"], input[type="tel"], input[type="number"] {
     margin-left: rem(20px);
     background-color: transparent;
     border: none;
+}
+.formerror {
+    margin-top: rem(100px);
+    position: absolute;
+    left: 50%;
+    @include tablet {
+        transform: translateX(-50%);
+    }
 }

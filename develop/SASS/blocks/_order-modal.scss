@@ -7,9 +7,14 @@
 
 .order-modal {
     display: none;
+    padding: 2%;
+    @include tablet {
+        padding: 4%;
+    }
+        
 }
 .order-modal-wrap--active .order-modal {
-    position: absolute;
+    position: fixed;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
@@ -21,7 +26,6 @@
     color: $green;
 }
 .order-modal__content {
-    padding: 5%;
     width: 80%;
     height: 100%;
 }
@@ -34,20 +38,18 @@
     justify-content: flex-end;
 }
 .order-modal-wrap--active  .cross {
-    margin-top: 15px;
-    margin-right: 15px;
     background-color: $green;
-    width: 20px;
-    height: 4px;
-    border-radius: 2px;
+    width: rem(20px);
+    height: rem(4px);
+    border-radius: rem(2px);
     transform: rotate(45deg);
     &::after {
         content: '';
         position: absolute;
         background-color: $green;
-        width: 20px;
-        height: 4px;
-        border-radius: 2px;
+        width: rem(20px);
+        height: rem(4px);
+        border-radius: rem(2px);
         transform: rotate(-90deg);
     }
 }
