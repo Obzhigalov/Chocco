@@ -359,6 +359,11 @@ body {
   height: 100%;
   line-height: 1.42; }
 
+.body {
+  height: 100%;
+  overflow: auto;
+  -webkit-overflow-scrolling: auto; }
+
 .body--menu {
   overflow: hidden; }
 
