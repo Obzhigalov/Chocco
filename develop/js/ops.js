@@ -70,7 +70,7 @@ let ops = function() {
 
             scrollTo(direction);
         },
-        // touchmove: e => e.preventDefault()
+        touchmove: e => e.preventDefault()
     });
 
     if(isMobile) {
@@ -78,7 +78,7 @@ let ops = function() {
             swipe: (event, direction) => {
                 scrollTo(direction);
             }
-
+            
         });
     };
 
