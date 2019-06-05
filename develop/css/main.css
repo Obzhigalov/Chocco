@@ -365,7 +365,8 @@ body {
 .scroll-turn-off {
   width: 100%;
   height: 100%;
-  overflow: auto; }
+  overflow: auto;
+  -webkit-overflow-scrolling: auto; }
 
 .wrapper {
   width: 100%;
