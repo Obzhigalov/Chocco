@@ -70,7 +70,7 @@ let ops = function() {
 
             scrollTo(direction);
         },
-        // touchmove: e => e.preventDefault()
+        touchmove: e => e.preventDefault()
         
     });
 
