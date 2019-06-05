@@ -106,3 +106,18 @@ cross.addEventListener('click', () => {
 
 clear.addEventListener('click', clearform)
 
+$("input, textarea").on({ 'touchstart' : function() {
+    zoomDisable();
+ }});
+ $("input, textarea").on({ 'touchend' : function() {
+    setTimeout(zoomEnable, 500);
+ }});
+ 
+ function zoomDisable(){
+  $('head meta[name=viewport]').remove();
+  $('head').prepend('<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0" />');
+ }
+ function zoomEnable(){
+  $('head meta[name=viewport]').remove();
+  $('head').prepend('<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=1" />');
+ }
