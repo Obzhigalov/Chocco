@@ -1,0 +1,25 @@
+
+.pros {
+	margin-top: rem(70px);
+	display: flex;
+	font-size: rem(16px);
+	font-weight: 400;
+	@include tablet {
+		margin-top: rem(35px);
+		width: 100%;
+		justify-content: space-around;
+	}
+}
+.pros__item {
+	display: flex;
+	max-width: rem(135px);
+	margin-left: rem(45px);
+	&:first-child {
+		margin-left: 0;
+	}
+}
+.pros_item-text {
+	width: 50%;
+	margin-left: rem(10px);
+}
+

@@ -1,0 +1,137 @@
+.header {
+    width: 100%;
+    height: 10%;
+    padding-top: rem(20px);
+    display: flex;
+    color: #fff;
+    align-items: center;
+    justify-content: space-between;
+    font-size: rem(17px);
+    font-weight: 400;
+}
+.header-logo {
+    @include phone {
+        width: 40px;
+    }
+}
+.phone {
+    margin-left: rem(45px);
+    padding-left: rem(15px);
+    font-size: rem(24px);
+    font-weight: 400;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: inherit;
+    background-image: url(../img/welcome/phone_.png);
+    background-repeat: no-repeat;
+    background-position: center left;
+
+}
+.phone--welcome {
+    @include tablet {
+        display: none;
+    }
+}
+.phone--welcome:hover {
+    opacity: 0.8;
+}
+.nav--active {
+    @include tablet {
+				z-index: 20;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+				background-color: rgba(0, 0, 0, 0.9);
+    }
+}
+.nav--active .nav-list {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	font-size: rem(36px)
+}
+.nav-list {
+    display: flex;
+    @include tablet {
+        display: none;
+    }
+}
+.nav-list__item {
+    margin-left: rem(27px);
+    &:first-child {
+				margin-left: rem(45px);
+				@include tablet {
+					margin-left: 0;
+				}
+    }
+    @include laptop {
+        margin-left: rem(15px);
+		}
+		@include tablet {
+			margin-left: 0;
+			margin-top: rem(20px);
+		}
+}
+.nav-list__link {
+    color: inherit;
+    text-decoration: none;
+}
+.nav-list__link:hover {
+    opacity: 0.85;
+}
+.burger-wrap {
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+}
+.burger {
+		display: none;
+		transition: transform 0.3s ease-in-out;
+    @include tablet {
+				z-index: 20;
+        border-radius: 2px;
+        position: relative;
+        display: flex;
+        background-color: #fff;
+        width: 24px;
+        height: 4px;
+        &::before {
+            border-radius: 2px;
+            position: absolute;
+            bottom: 9px;
+            content: "";
+            width: 24px;
+            height: 4px;
+            background-color: #fff;
+        }
+        &::after {
+			transition: transform 0.15s ease-in-out;
+            border-radius: 2px;
+            position: absolute;
+            top: 9px;
+            content: "";
+            width: 24px;
+            height: 4px;
+            background-color: #fff;
+        }
+    }
+}
+.burger--active {
+	opacity: 1;
+	transform: rotate(45deg);
+	transition: transform 0.3s ease-in-out;
+	&::before {
+		opacity: 0;
+	}
+	&::after {
+		transform: rotate(90deg);
+		right: 0;
+		top: 0;
+		transition: transform 0.3s ease-in-out;
+	}
+}

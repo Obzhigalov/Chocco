@@ -1,0 +1,13 @@
+.product {
+    font-family: $Alegreya;
+    background-color: #f8faf9
+}
+.container--product {
+    position: relative;
+    width: 85%;
+    max-width: 940px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}

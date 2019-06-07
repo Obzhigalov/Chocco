@@ -1,0 +1,42 @@
+.team {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: $Alegreya;
+    &:before {
+        z-index: 5;
+        position: absolute;
+        top: rem(-235px);
+        right: 0;
+        content: "";
+        width: rem(196px);
+        height: rem(578px);
+        background-image: url(../img/team/team-bg-1.png);
+        background-repeat: no-repeat;
+        background-position: top right;
+    }
+    &::after {
+        z-index: 5;
+        position: absolute;
+        bottom: rem(-55px);
+        content: "";
+        left: 0;
+        width: rem(104px);
+        height: rem(114px);
+        background-image: url(../img/team/team-bg-2.png);
+        background-repeat: no-repeat;
+        background-position: bottom left;
+    }
+    @include tablet {
+        &::before {
+            top: rem(-180px);
+            background-size: rem(150px);
+        }
+        &::after {
+            bottom: rem(-30px);
+            background-size: rem(75px);
+        }
+    }
+}

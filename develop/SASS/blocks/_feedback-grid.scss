@@ -1,0 +1,112 @@
+.feedback-grid {
+    z-index: 10;
+    width: 100%;
+}
+.feedback-card--1, .feedback-card--2, .feedback-card--3 {
+	overflow: hidden;
+    margin-top: rem(50px);
+    position: relative;
+    padding: rem(45px);
+    width: 100%;
+    display: none;
+    background-image: url(../img/feedback/feedback-card-bg.png);
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-color: #f8faf9;
+    @include tablet {
+        min-height: 43.875rem;
+        margin-top: rem(30px);
+        margin-right: auto;
+        margin-left: auto;
+        width: 60%;
+        background-size: rem(68px);
+    }
+}
+.feedback-card--active {
+    display: flex;
+    @include tablet {
+        text-align: center;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+.feedback-card__upside {
+	position: absolute;
+	top: 0;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-color: #fff;
+	width: rem(123px);
+	height: rem(75px);
+	-webkit-clip-path: ellipse(35% 35% at 50% 50%);
+}
+.feedback-card__img-wrap {
+    width: rem(254px);
+    height: rem(260px);
+    overflow: hidden;
+}
+.feedback-card__img {
+    object-fit: cover;
+}
+.feedback-card__content {
+    margin-left: rem(17px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.feedback-card__title {
+    color: #323232;
+    font-size: rem(30px);
+    font-weight: 500;
+    @include tablet {
+        margin-top: rem(15px);
+    }
+}
+.feedback-card__description {
+    color: $dark-grey;
+    max-width: rem(460px);
+    font-size: rem(18px);
+    font-weight: 400;
+    @include tablet {
+        max-width: rem(383px);
+        margin-top: rem(15px);
+    }
+}
+.feedback-card__subtitle {
+    color: $dark-grey;
+    font-size: rem(18px);
+    font-weight: 500;
+    @include tablet {
+        margin-top: rem(15px);
+    }
+}
+.feedback-grid-buttons {
+		width: 100%;
+		margin-top: rem(50px);
+    display: flex;
+		justify-content: center;
+		align-items: center;
+}
+.feedback-grid__switch {
+        cursor: pointer;
+        border: rem(8px) solid transparent;
+        box-sizing: content-box;
+		margin-left: rem(40px);
+        overflow: hidden;
+        width: rem(94px);
+        height: rem(94px);
+        border-radius: 50%;
+        transition: border 0.1s;
+		&:first-child {
+			margin-left: 0;
+		}
+}
+.feedback-grid__switch--active {
+	border: rem(8px) solid $green;
+    background-color: $green;
+    transition: border 0.3s;
+}
+.feedback-grid-buttons__img {
+    object-fit: cover;
+    transition: filter 0.15s;
+}

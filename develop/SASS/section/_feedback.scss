@@ -1,0 +1,38 @@
+.feedback {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    min-height: 40.625rem;
+    font-family: $Alegreya;
+    background-image: url(../img/feedback/feedback-bg-1.png);
+    background-repeat: no-repeat;
+    background-position: 100% 2.5%;
+        &::after {
+            content: '';
+            z-index: 5;
+            position: absolute;
+            left: 0;
+            bottom: rem(-190px);
+            width: rem(158px);
+            height: rem(422px);
+            background-image: url(../img/feedback/feedback-bg-2.png);
+            background-repeat: no-repeat;
+            background-position: bottom left;
+        }
+    @include tablet {
+        background-size: rem(140px);
+        &::after {
+            bottom: rem(-90px);
+            background-size: rem(110px);
+        }
+    }
+}
+.container--feedback {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+	margin: 0 auto;
+	max-width: 58.75rem;
+}

@@ -1,0 +1,131 @@
+
+.welcome {
+		position: relative;
+		overflow: visible;
+		width: 100%;
+		height: 100%;
+		min-height: 40.625rem;
+    background-color: $blue;
+    font-family: $Alegreya;
+		color: #fff;
+		display: flex;
+		flex-direction: column;
+		background-image: url(../img/welcome/welcome-bg-1.png);
+		background-repeat: no-repeat;
+		background-position: right bottom;
+		@include tablet {
+			background-position: right top;
+			background-size: rem(600px);
+		}
+		@include phone {
+			background-size: rem(450px);
+		}
+}
+.container--welcome {
+	position: relative;
+	z-index: 1;
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0 auto;
+	padding: 0 3%;
+	max-width: rem(1100px);
+		&::after {
+			content: '';
+			position: absolute;
+			z-index: -1;
+			bottom: rem(-45px);
+			right: 0;
+			height: 100%;
+			width: 100%;
+			background-image: url(../img/welcome/welcome-bg-2.png);
+			background-size: 100%;
+			background-position: center bottom;
+			background-repeat: no-repeat;
+		}
+		@include tablet {
+			position: static;
+			width: 100%;
+			&::after {
+				display: none;
+			}
+		}
+}
+.welcome-content {
+		padding-bottom: rem(50px);
+		position: relative;
+		width: 100%;
+		height: 90%;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		align-items: flex-start;
+		@include tablet {
+			justify-content: flex-start;
+			align-items: center;
+		}
+}
+.welcome-content__inner {
+	@include tablet {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+}
+.welcome-content__title {
+		max-width: rem(410px);
+    margin-top: rem(85px);
+    font-size: rem(60px);
+    font-weight: 700;
+    line-height: rem(60px);
+		text-transform: uppercase;
+		@include tablet {
+			margin-top: rem(50px);
+			text-align: center;
+		}
+}
+.welcome-content__description {
+		max-width: rem(342px);
+    margin-top: rem(12px);
+    font-size: rem(21px);
+    font-weight: 400;
+		margin-block-end: 0;
+		@include tablet {
+			text-align: center;
+		}
+}
+.candy-bar-wrap {
+	z-index: -1;
+	position: absolute;
+	right: 0;
+	top: 0;
+	@include tablet {
+		position: relative;
+		order: -1;
+		&::after {
+			content: "";
+			position: absolute;
+			bottom: rem(-20px);
+			left: 0;
+			width: rem(434px);
+			height: rem(280px);
+			background-image: url(../img/welcome/welcome-bg-2-tablet.png);
+			background-repeat: no-repeat;
+			background-size: rem(434px);
+		}
+	@include phone {
+		&::after {
+		}
+	}
+	}
+}
+.welcome-candy-bar {
+
+	@include tablet {
+		position: relative;
+		order: -1;
+		max-width: rem(403px);
+	}
+	@include phone {
+
+	}
+}

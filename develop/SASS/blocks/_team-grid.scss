@@ -1,0 +1,108 @@
+.team-grid {
+    margin-top: rem(70px);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    min-height: rem(510px);
+    @include laptop {
+        width: 70%;
+        min-height: rem(610px);
+        justify-content: center;
+        padding: 0 rem(10px);
+    }
+}
+.team-grid__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-left: rem(15px);
+    max-width: 223px;
+    &:first-child {
+        margin-left: 0;
+    }
+    &:nth-child(2n) {
+        margin-top: rem(60px);
+    }
+    @include laptop {
+        padding-bottom: rem(10px);
+        width: calc(100%/2 - 10px);
+        margin-left: 0;
+        &:nth-child(2n) {
+            margin-top: 0;
+            margin-left: rem(20px);
+        }
+    }
+}
+.team-grid__img-wrap {
+    width: rem(223px);
+    @include laptop {
+        width: 100%;
+    }
+}
+.team-grid__img {
+    width: 100%;
+    object-fit: cover;
+}
+.team-grid__title {
+    position: relative;
+    margin-top: rem(25px);
+    font-size: rem(21px);
+    font-weight: 500;
+    color: #323232;
+}
+.team-grid__switch {
+        position: relative;
+        color: inherit;
+        text-decoration: inherit;
+    &::after {
+        position: absolute;
+        top: 55%;
+        right: rem(-15px);
+        transform: translateY(-50%);
+        content: "";
+        width: rem(9px);
+        height: rem(9px);
+        -webkit-clip-path: polygon(0 20%, 50% 100%, 100% 20%);
+        background-color: #0f5a47;
+    }
+}
+.team-grid__switch:hover {
+    color: $green;
+}
+.team-grid__item--active .team-grid__switch {
+    &::after {
+        position: absolute;
+        top: 55%;
+        right: rem(-15px);
+        transform: translateY(-50%);
+        content: "";
+        width: rem(9px);
+        height: rem(9px);
+        -webkit-clip-path: polygon(0 80%, 50% 0, 100% 80%);
+        background-color: #0f5a47;
+    }
+}
+.team-grid__subtitle {
+    opacity: 0;
+    display: block;
+    font-size: rem(18px);
+    font-weight: 400;
+    color: #281e1e;
+}
+.team-grid__item--active .team-grid__subtitle {
+    transition: all 0.4s;
+    opacity: 1;
+}
+.team-grid__descr {
+    opacity: 0;
+    display: block;
+    max-width: rem(245px);
+    font-size: rem(18px);
+    font-weight: 300;
+    color: #666666;
+}
+.team-grid__item--active .team-grid__descr {
+    transition: all 0.4s;
+    opacity: 1;
+}
