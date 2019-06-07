@@ -1,0 +1,23 @@
+/*basic */
+@import "basic/normalize.scss";
+@import "basic/basic.scss";
+
+
+/*variables */
+@import "variables/color.scss";
+@import "variables/mixin";
+@import "variables/font-stacks";
+
+
+/*sections */
+@import "section/welcome.scss";
+@import "section/about-us";
+@import "section/feedback";
+
+
+/*blocks */
+@import "blocks/header";
+@import "blocks/create-order";
+@import "blocks/pros";
+@import "blocks/section-title";
+@import "blocks/feedback-grid"

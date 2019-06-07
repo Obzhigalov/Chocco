@@ -1,0 +1,15 @@
+.create-order {
+    cursor: pointer;
+    margin-top: rem(30px);
+    box-shadow: 0 0 10px rgba($color: #3f3f3f, $alpha: 0.25);
+    outline: none;
+    border: transparent;
+    background-color: #fff;
+    width: rem(156px);
+    height: rem(58px);
+    border-radius: rem(35px);
+    color: #0f5a47;
+    font-size: rem(19px);
+    font-weight: 800;
+    text-transform: uppercase;
+}
