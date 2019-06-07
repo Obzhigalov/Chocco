@@ -36,7 +36,7 @@ task("compile", () => {
 task('server', function() {
     browserSync.init({
         server: {
-            baseDir: "index.html"
+            baseDir: "prod"
         }
     });
 });
