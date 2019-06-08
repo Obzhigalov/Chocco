@@ -8,7 +8,7 @@ let placemarks = [
         balloonContent: [   
             '<div class="map__balloon">',
             'Работаем с 10:00 до 19:00',
-            '<img class="map__mark-img" src="img/contacts/bars.png"',
+            '<img class="map__mark-img" src="img/contacts/bars.png" alt="Chocco marker"',
             '</div>'
         ]
     },
@@ -19,7 +19,7 @@ let placemarks = [
         balloonContent: [   
             '<div class="map__balloon">',
             'Работаем с 11:00 до 21:00',
-            '<img class="map__mark-img" src="img/contacts/bars.png"',
+            '<img class="map__mark-img" src="img/contacts/bars.png" alt="Chocco marker"',
             '</div>'
         ]
     },
@@ -30,7 +30,7 @@ let placemarks = [
         balloonContent: [   
             '<div class="map__balloon">',
             'Работаем с 10:00 до 20:00',
-            '<img class="map__mark-img" src="img/contacts/bars.png"',
+            '<img class="map__mark-img" src="img/contacts/bars.png" alt="Chocco marker"',
             '</div>'
         ]
     }
