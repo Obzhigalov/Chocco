@@ -13,6 +13,7 @@ let ops = function() {
         
         let position = sectionNdx*-100 + "%";
 
+
         sections
         .eq(sectionNdx)
         .addClass("is-active")
@@ -53,11 +54,14 @@ let ops = function() {
 
         let section = defineSections(sections);
 
-        if(direction === "up" && section.nextSection.length) {
+        let modalActive = document.querySelector('.order-modal-wrap--active');
+        let navActive = document.querySelector('.nav--active');
+
+        if(direction === "up" && section.nextSection.length && !modalActive && !navActive) {
             transform(section.nextSection.index());
         }
 
-        if(direction === "down" && section.prevSection.length) {
+        if(direction === "down" && section.prevSection.length && !modalActive && !navActive) {
             transform(section.prevSection.index());
         }
     }
