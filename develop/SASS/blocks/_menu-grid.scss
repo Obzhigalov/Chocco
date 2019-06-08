@@ -94,4 +94,7 @@
 .menu-grid__item--active .menu-grid__item-text {
     opacity: 1;
     transition: opacity 0.1s 0.4s;
+    @include tablet {
+        transition: opacity 0.1s; 
+    }
 }
