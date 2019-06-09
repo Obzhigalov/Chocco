@@ -9,11 +9,12 @@ const autoprefixer = require('gulp-autoprefixer');
 const px2rem = require('gulp-smile-px2rem');
 const cleanCSS = require('gulp-clean-css');
 const sourcemaps = require('gulp-sourcemaps');
-
+const svgo = require('gulp-svgo');
+const svgSprite = require('gulp-svg-sprite');
 
 
 task('clean', () => {
-    return src('prod/**/*', { read:false }).pipe(rm())
+    return src('./prod/**/*', { read:false }).pipe(rm())
 })
 
 sass.compiler = require('node-sass');
@@ -31,16 +32,40 @@ task("compile", () => {
     .pipe(cleanCSS())
     .pipe(sourcemaps.write())
     .pipe(dest('css'));
+});
+
+task("copyHtml", () => {
+    return src('index.html').pipe(dest('./prod/'))
 })
+
+task("copyStyle", () => {
+    return src('css/*.css').pipe(dest('./prod/css'))
+});
+
+task("copyImg",() => {
+    return src('img/**/*').pipe(dest('./prod/img/'))
+})
+
+task("copyJs",() => {
+    return src('js/**/*').pipe(dest('./prod/js/'))
+})
+
+task("copyVideo",() => {
+    return src('video/**/*').pipe(dest('./prod/video/'))
+})
+
+task('icons', function() {
+
+});
 
 task('server', function() {
     browserSync.init({
         server: {
-            baseDir: "prod"
+            baseDir: "./prod"
         }
     });
 });
 
 watch('sass/**/*.scss', series("compile"));
 
-task("default", series("compile", "server"));
+task("default", series("clean","copyHtml", "copyStyle", "copyImg", "copyJs","copyVideo", "compile", "server"));
