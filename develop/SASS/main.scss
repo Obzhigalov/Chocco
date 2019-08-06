@@ -1,37 +1,37 @@
 /*variables */
-@import "variables/color.scss";
-@import "variables/mixin";
-@import "variables/font-stacks";
-@import "variables/breakpoints";
+@import "variables/*.scss";
 
 /*basic */
-@import "basic/normalize";
-@import "basic/basic";
+@import "basic/*.scss";
+
 
 
 
 /*sections */
-@import "section/welcome.scss";
-@import "section/about-us";
-@import "section/feedback";
-@import "section/team";
-@import "section/menu";
-@import "section/order";
-@import "section/contacts";
-@import "section/product";
+@import "section/*.scss";
+// @import "section/about-us";
+// @import "section/feedback";
+// @import "section/team";
+// @import "section/menu";
+// @import "section/order";
+// @import "section/contacts";
+// @import "section/product";
 
 
 /*blocks */
-@import "blocks/header";
-@import "blocks/create-order";
-@import "blocks/pros";
-@import "blocks/section-title";
-@import "blocks/feedback-grid";
-@import "blocks/team-grid";
-@import "blocks/menu-grid";
-@import "blocks/form";
-@import "blocks/map";
-@import "blocks/footer";
-@import "blocks/slider";
-@import "blocks/order-modal";
+@import './blocks/*.scss';
+// @import "blocks/header";
+// @import "blocks/create-order";
+// @import "blocks/pros";
+// @import "blocks/section-title";
+// @import "blocks/feedback-grid";
+// @import "blocks/team-grid";
+// @import "blocks/menu-grid";
+// @import "blocks/form";
+// @import "blocks/map";
+// @import "blocks/footer";
+// @import "blocks/slider";
+// @import "blocks/order-modal";
+// @import "blocks/pagination";
+
 

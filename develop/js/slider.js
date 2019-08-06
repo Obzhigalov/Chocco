@@ -20,7 +20,7 @@ left.addEventListener('click', function() {
 });
 
 console.log(sliderarray.length)
-let sliderArrayL = sliderarray.length*(-100)+100
+let sliderArrayL = (sliderarray.length-1)*-100;
 
 right.addEventListener('click', function() {
     event.preventDefault();

@@ -14,6 +14,8 @@ html {
 		font-size: 8px;
 	}
 }
+
+
 ul,
 li {
 	list-style: none;
@@ -51,15 +53,22 @@ body {
 .body--menu {
 	overflow: hidden;
 }
+
 .wrapper {
 	width: 100%;
 	height: 100%;
+	overflow: hidden;
+}
+.section-wrap {
+	width: 100%;
+	height: 100%;
+	transition: transform 0.6s;
 }
 .container {
 	height: 100%;
 }
 .section {
-	min-height: rem(650px);
+	min-height: rem(600px);
 	height: 100%;
 	width: 100%;
 	@include phone {

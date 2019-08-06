@@ -1,7 +1,22 @@
 .map {
     height: 100%;
     width: 100%;
-    background-image: url(../img/contacts/contacts-bg.png);
+    // background-image: url(../img/contacts/contacts-bg.png);
     background-repeat: no-repeat;
     background-size: cover;
+}
+.map__hint {
+    font-family: $Alegreya;
+    color: $green;
+    font-size: rem(16px);
+}
+.map__balloon {
+    font-family: $Alegreya;
+    color: $green;
+    font-size: rem(16px);
+    display: flex;
+    align-items: center;
+}
+.map__mark-img {
+    width: rem(60px);
 }

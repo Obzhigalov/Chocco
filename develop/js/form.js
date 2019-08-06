@@ -105,4 +105,3 @@ cross.addEventListener('click', () => {
 })
 
 clear.addEventListener('click', clearform)
-
