@@ -54,10 +54,10 @@
     flex-direction: column;
     justify-content: space-around;
     opacity: 0;
+    transition: all 1s;
 }
 .feedback-card--active .feedback-card__content {
     opacity: 1;
-    transition: opacity 0.3s;
 }
 .feedback-card__title {
     color: #323232;
